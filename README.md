@@ -8,7 +8,7 @@ Our group is Shakti_7 from Class 13, composed by:
 - José Francisco Reis Pedreiras Neves Veiga - up202108753@up.pt (50%)
   
 ## Installation and execution
-We need SICStus Prolog 4.8 to play this game. There, we should consult the main.pl file found in the src folder and type **play** to start running the game's code.
+We need SICStus Prolog 4.8 to play this game. There, we should consult the shakti.pl file found in the src folder and type **play** to start running the game's code.
 
 ## Description of the game
 
