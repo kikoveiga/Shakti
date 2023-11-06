@@ -50,7 +50,28 @@ A Warrior can make two kinds of moves:
 
 ## Game Logic
 
+### Internal Game State Representation
+Our game state is represented by the board and color of the player who has to move. The board is a list of lists and its atoms are empty, tile, white/black warrior and white/black king.
+
+### Game State Visualization
+The program first displays the main menu, where the user can different game modes : Player vs Player, Player vs Computer or Computer vs Computer.
+Then the game loop starts and the initial board is displayed, asking the player with the white pieces to input its move.
+
+### Move Validation and Execution
+With each move input, our program verifies if the coordinates of the move are in the bounds of the board. After that, it verifies if the player wants to move his own piece and not his opponent's, and accordingly with the rules of the game, such as moving a specific number of tiles and not leaving the king in check.
+
+### List of Valid Moves
+We used the findall predicate to find all the valid moves in a given game state.
+
+### End of Game
+Not implemented.
+
+### Game State Evaluation
+Not implemented.
+
 ## Conclusions
+
+Implementing a game in Prolog was very different from what we did in other UCs using other programming languages. 
 
 ## Bibliography
 
