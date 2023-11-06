@@ -6,6 +6,7 @@
 
 valid_piece_move(Board, SR, SC, DR, DC, white_king) :-
     
+    
 
 
 piece_color(white_king, 'WHITE').
@@ -14,10 +15,9 @@ piece_color(black_king, 'BLACK').
 piece_color(black_warrior, 'BLACK').
 
 validate_move(Board, [[SR, SC], [DR, DC], Piece], Color) :-
-    validate_move_inbounds(SR, SC, DR, DC),
+    get_value_from_board(Board, SR, SC, Piece),
     piece_color(Piece, Color),
-    get_value_from_board(Board, SR, SC, CheckTile),
-    is_destination_tile(CheckTile),
+    get_value_from_board(Board, DR, DC, tile),
     valid_piece_move(Board, SR, SC, DR, DC, Piece).
     
 move_piece(Board, Move, Color, FinalBoard) :-

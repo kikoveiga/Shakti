@@ -51,8 +51,7 @@ convert_value(black_warrior, Piece) :- Piece = 'w'.
 
 get_value_from_board(Board, Row, Column, Piece) :-
     nth0(Row, Board, BoardRow),
-    nth0(Column, BoardRow, Value),
-    convert_value(Value, Piece).
+    nth0(Column, BoardRow, Piece).
 
 
 
