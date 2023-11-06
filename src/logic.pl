@@ -1,14 +1,11 @@
 
 % valid_moves(Board, Row, Column, Piece, ListOfMoves){
-%     findall(Move, valid_move(Board, Row, Column, Piece), ListOfMoves).
+%     findall(Move, validate_move(Board, Row, Column, Piece), ListOfMoves).
 
 % }
 
 valid_piece_move(Board, SR, SC, DR, DC, white_king) :-
     
-    
-
-
 piece_color(white_king, 'WHITE').
 piece_color(white_warrior, 'WHITE').
 piece_color(black_king, 'BLACK').
