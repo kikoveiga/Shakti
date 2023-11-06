@@ -4,6 +4,7 @@
 :- consult('utils.pl').
 :- use_module(library(system)).
 :- use_module(library(random)).
+:- use_module(library(lists)).
 
-shakti :-
+play :-
     main_menu.

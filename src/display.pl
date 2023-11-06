@@ -1,9 +1,9 @@
 initial_board([[empty, tile, tile, tile, tile, tile, empty],
-              [tile, warrior, tile, king, tile, warrior, tile],
+              [tile, black_warrior, tile, black_king, tile, black_warrior, tile],
               [tile, tile, tile, tile, tile, tile, tile],
               [tile, tile, tile, tile, tile, tile, tile],
               [tile, tile, tile, tile, tile, tile, tile],
-              [tile, warrior, tile, king, tile, warrior, tile],
+              [tile, white_warrior, tile, white_king, tile, white_warrior, tile],
               [empty, tile, tile, tile, tile, tile, empty]]).
 
 
@@ -11,7 +11,7 @@ initial_board([[empty, tile, tile, tile, tile, tile, empty],
 display_game(Board) :-
     nl,
     write('---|---|---|---|---|---|---|---|\n'),
-    write('   | A | B | C | D | E | F | G |\n'),
+    write('   | 1 | 2 | 3 | 4 | 5 | 6 | 7 |\n'),
     write('---|---|---|---|---|---|---|---|\n'),
     display_matrix(Board, 1),
     write('---|---|---|---|---|---|---|---|\n').
@@ -34,5 +34,7 @@ display_row([Head | Rest]) :-
 % Display a single cell
 write_cell(empty) :- write(' ').
 write_cell(tile) :- write('T').
-write_cell(king) :- write('K').
-write_cell(warrior) :- write('W').
+write_cell(white_king) :- write('K').
+write_cell(white_warrior) :- write('W').
+write_cell(black_king) :- write('k').
+write_cell(black_warrior) :- write('w').
