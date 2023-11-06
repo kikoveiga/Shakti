@@ -6,5 +6,6 @@
 :- use_module(library(random)).
 :- use_module(library(lists)).
 
+% Main predicate
 play :-
     main_menu.
